@@ -1,54 +1,51 @@
 # Chicago-Shooting-EDA-and-prediction
 
-By Kalkidan Weldearegay 
 
-the source of the dataset is Violence Reduction - Victims of Homicides and Non-Fatal ShootingsPublic
-from the Chicago Data portal 
+## an abstract/introduction
 
-Source dataset link: https://data.cityofchicago.org/resource/gumc-mgzr.csv 
+Gun violence and shooting has been a pressing issue in the United States for a while and has been happening more frequently. for this project, we will be using the Chicago open data source to do a program traning and have a better understanding of the factors in the Cities of Chicago. 
 
-There are 38 Columns in the Dataset
+ 
+## exploratory data analysis
+Index(['CASE_NUMBER', 'DATE', 'BLOCK', 'PRIMARY_TYPE', 'UNIQUE_ID', 'ZIP_CODE',
+       'WARD', 'COMMUNITY_AREA', 'STREET OUTREACH ORGANIZATION', 'AREA',
+       'DISTRICT', 'BEAT', 'AGE', 'SEX', 'RACE', 'FBI_CD', 'FBI_DESCR',
+       'IUCR_CD', 'IUCR_SECONDARY', 'MONTH', 'DAY_OF_WEEK', 'HOUR', 'LATITUDE',
+       'LONGITUDE', 'LOCATION'],
+      dtype='object')
+      
+The Number of distinct crimes in City: 3
+
+The Distinct Crimes are :
+ ['FATAL SHOOTING' 'NON-FATAL SHOOTING' 'NON-SHOOTING HOMICIDE']
+ 
+
+## data cleaning and feature engineering
+
+Handling Missing Values
+There are unknown values for many variables in the Data set. There are many ways to handle missing data.
+## modeling
 
 
-Index for the dataset 
-Case Number
+## results and discussion
 
-Date 
+According to the EDA it shows that 2017 - 2019 had the highest crime activity in the five-year period. Throughout the 2016 - 2021 period, January & February had the highest crime activity and most recently November 2021. The months in 2020 with the highest crime activity are June & July.Throughout the 5-year period, these months recorded the highest crime activity
 
-Block 
 
-ZIP Code 
+## conclusion/next steps 
 
-Months:
-Jan - 1
-Feb - 2 
-Mar - 3 
-Apr - 4 
-May - 5 
-Jun - 6 
-Jul - 7
-Aug - 8
-Sep - 9
-Oct - 10
-Nov - 11
-Dec - 12
 
-SEX : the gender of the victim. The Post identifies victims by the gender they identify with if reports indicate that it differs from their biological sex.
+references
+** The source of the dataset is Data is extracted from the Chicago Police Department's CLEAR (Citizen Law Enforcement Analysis and Reporting) system.  Violence Reduction - Victims of Homicides and Non-Fatal ShootingsPublic from the Chicago Data portal
+Source dataset link: https://data.cityofchicago.org/resource/gumc-mgzr.csv
 
-M: Male
-F: Female
-X: unknown
-and other that wasnt provided 
-race:
+![image](https://user-images.githubusercontent.com/85205752/145920359-845c6619-2685-4ea1-96d0-4665f7e2def8.png)
+ **
+** how to deal with the imbalanced data set I used Synthetic Minority Oversampling Technique to deal with class imbalance smote = SMOTE() 
+source:https://www.analyticsvidhya.com/blog/2020/07/10-techniques-to-deal-with-class-imbalance-in-machine-learning/ 
+![image](https://user-images.githubusercontent.com/85205752/145920412-25ba8c58-9687-4aa6-8916-c2ba25c95ef4.png)[Which helped with the fitting the  predictor and target variable x_smote, y_smote = smote.fit_resample(X, Y) ![image](https://user-images.githubusercontent.com/85205752/145920594-1afd339e-dcd5-4e40-9b5b-c27f3f88145f.png)
+]
+ **
 
-W: White, non-Hispanic
-B: Black, non-Hispanic
-A: Asian
-N: Native American
-H: Hispanic
-O: Other
-"How does this dataset classify victims?
 
-The methodology by which this dataset classifies victims of violent crime differs by victimization type:
 
-Homicide and non-fatal shooting victims: A victimization is considered a homicide victimization or non-fatal shooting victimization depending on its presence in CPD's homicide victims data table or its shooting victims data table."  
