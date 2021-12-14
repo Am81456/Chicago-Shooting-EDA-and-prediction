@@ -24,7 +24,16 @@ The Distinct Crimes are :
 
 Handling Missing Values
 There are unknown values for many variables in the Data set. There are many ways to handle missing data.
+
+Imbalanced Data set 
+how to deal with the imbalanced data set I used Synthetic Minority Oversampling Technique to deal with class imbalance smote = SMOTE() 
+source:https://www.analyticsvidhya.com/blog/2020/07/10-techniques-to-deal-with-class-imbalance-in-machine-learning/ 
+Which helped with the fitting the  predictor and target variable x_smote, y_smote = smote.fit_resample(X, Y) and Stratifying  target variable 
+  
+
 ## modeling
+for this dataset, we will be using the random forest model and ADA Boost and compare which one has a higher accuracy and precision rate. 
+
 
 
 ## results and discussion
@@ -33,6 +42,9 @@ According to the EDA it shows that 2017 - 2019 had the highest crime activity in
 
 
 ## conclusion/next steps 
+Based on the analysis shown on the slides before, it shows that the random forest has a better result than ADA boost with both accuracy and precision 
+
+
 
 
 references
