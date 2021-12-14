@@ -50,14 +50,8 @@ Based on the analysis shown on the slides before, it shows that the random fores
 references
 ** The source of the dataset is Data is extracted from the Chicago Police Department's CLEAR (Citizen Law Enforcement Analysis and Reporting) system.  Violence Reduction - Victims of Homicides and Non-Fatal ShootingsPublic from the Chicago Data portal
 Source dataset link: https://data.cityofchicago.org/resource/gumc-mgzr.csv
-
-![image](https://user-images.githubusercontent.com/85205752/145920359-845c6619-2685-4ea1-96d0-4665f7e2def8.png)
- **
-** how to deal with the imbalanced data set I used Synthetic Minority Oversampling Technique to deal with class imbalance smote = SMOTE() 
-source:https://www.analyticsvidhya.com/blog/2020/07/10-techniques-to-deal-with-class-imbalance-in-machine-learning/ 
-![image](https://user-images.githubusercontent.com/85205752/145920412-25ba8c58-9687-4aa6-8916-c2ba25c95ef4.png)[Which helped with the fitting the  predictor and target variable x_smote, y_smote = smote.fit_resample(X, Y) ![image](https://user-images.githubusercontent.com/85205752/145920594-1afd339e-dcd5-4e40-9b5b-c27f3f88145f.png)
-]
- **
+** To deal with the imbalanced data set I used Synthetic Minority Oversampling Technique to deal with class imbalance smote = SMOTE() 
+source:https://www.analyticsvidhya.com/blog/2020/07/10-techniques-to-deal-with-class-imbalance-in-machine-learning/. [Which helped with the fitting the  predictor and target variable x_smote, y_smote = smote.fit_resample(X, Y)
 
 
 
