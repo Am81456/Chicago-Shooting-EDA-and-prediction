@@ -1,5 +1,8 @@
 # Chicago-Shooting-EDA-and-prediction
 
+PRESENTATION LINK - https://youtu.be/iPWfWE0zIL4
+
+
 
 ## an abstract/introduction
 
